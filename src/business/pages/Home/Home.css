@@ -1,0 +1,9 @@
+.bg-featurelocation{
+    background-image: url('/public/img/faeture.png');
+    min-height: 200px;
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

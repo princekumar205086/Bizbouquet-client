@@ -1,0 +1,17 @@
+.bg-blue{
+  background-color: #130f40 !important;
+  color: #05c46b !important;
+}
+
+.bg-green{
+  background-color: #05c46b !important;
+  color: #130f40 !important;
+}
+
+.text-blue{
+  color: #130f40 !important;
+}
+
+.text-green{
+  color:#05c46b !important;
+}
