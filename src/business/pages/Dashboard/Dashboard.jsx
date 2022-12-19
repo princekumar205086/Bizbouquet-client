@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../Dashboard/Dashboard.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 export default function Dashboard() {
     // let list = document.querySelectorAll('.navigation li');
     let logo = document.querySelector('.college-logo');
@@ -20,6 +20,12 @@ export default function Dashboard() {
         logo.classList.toggle('collapsed');
     }
     // End Active toggle code
+
+    // logout implementatin
+    const navigate = useNavigate()
+    const logout =()=>{
+        navigate('/home')
+    }
     return (
         <>
 
@@ -56,7 +62,7 @@ export default function Dashboard() {
                         <li className={activeLink} onMouseOver={setActive} >
                             <Link to="/">
                                 <span className="icon"><ion-icon name="log-out-outline"></ion-icon></span>
-                                <span className="title">Sign-out</span>
+                                <span className="title" onClick={logout}>Sign-out</span>
                             </Link>
                         </li>
                     </ul>
@@ -86,7 +92,7 @@ export default function Dashboard() {
                                         <h2>50+</h2>
                                     </div>
                                     <div className="card-footer bg-light text-dark">
-                                        <p>Courses</p>
+                                        <p>Listed business</p>
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +102,7 @@ export default function Dashboard() {
                                         <h2>500+</h2>
                                     </div>
                                     <div className="card-footer bg-light text-dark">
-                                        <p>Notes</p>
+                                        <p>Faetures Location</p>
                                     </div>
                                 </div>
                             </div>
@@ -106,7 +112,7 @@ export default function Dashboard() {
                                         <h2>20+</h2>
                                     </div>
                                     <div className="card-footer bg-light text-dark">
-                                        <p>Notification</p>
+                                        <p>Category</p>
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +122,7 @@ export default function Dashboard() {
                                         <h2>100+</h2>
                                     </div>
                                     <div className="card-footer bg-light text-dark">
-                                        <p>Notification</p>
+                                        <p>Users</p>
                                     </div>
                                 </div>
                             </div>

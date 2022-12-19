@@ -53,7 +53,7 @@ export default function Category() {
       <div className="container p-2">
         <div className="row slider responsive slick-initialized slick-slider slick-dotted">
           <Slider className="p-1" {...settings}>
-            {
+             {
               cat_data.map(catdata => (<Categorycard catdata={catdata} />))
             }
             {/* <Categorycard />

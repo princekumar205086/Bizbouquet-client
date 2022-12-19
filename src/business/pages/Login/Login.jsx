@@ -67,7 +67,7 @@ export default function Login() {
     }
     // validation for email
     const isEmail = () => {
-        let reg = /^[a-z 0-9]{1,}@[a-z]{2,}[.]{1}[a-z]{2,5}$/;
+        let reg = /^[a-z 0-9]{1,}@[a-z]{2,10}[.]{1}[a-z]{2,5}$/;
         if (email_id.trim() === "") {
             setemail_id_Error('Email field is required!')
             setemailflag('is-invalid')

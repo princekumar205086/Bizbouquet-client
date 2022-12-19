@@ -17,7 +17,7 @@ export default function Featureslistcard(props) {
           />
         </div>
         <div className="card-body">
-          <h5 className="h6">{props.carddata.b_name}</h5>
+          <h5 className="h6 fw-bold">{props.carddata.b_name}</h5>
           <p className="small fw-light">
             <GrLocation /> {props.carddata.b_loc} <SlCalender /> {props.carddata.b_doc} <BiSupport /> {props.carddata.b_contact}
           </p>
@@ -28,7 +28,7 @@ export default function Featureslistcard(props) {
         </div>
         <div className="card-footer m-0 p-0">
           <p>
-            Prince Kumar <GoVerified size={12} className='text-primary' />
+          {props.carddata.b_owner} <GoVerified size={12} className='text-primary' />
             &nbsp;
             <GoGlobe size={12} className='text-success' /> <span className="small text-primary">http://www.webdiiger.in</span>
           </p>
