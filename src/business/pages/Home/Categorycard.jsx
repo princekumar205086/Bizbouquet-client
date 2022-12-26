@@ -1,5 +1,5 @@
 import React from 'react'
-import {BiHotel} from 'react-icons/bi'
+import {BiHotel, } from 'react-icons/bi'
 export default function Categorycard(props) {
   return (
     <>

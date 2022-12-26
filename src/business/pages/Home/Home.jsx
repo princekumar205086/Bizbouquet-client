@@ -1,7 +1,7 @@
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.css"
 import Herosection from '../Herosection/Herosection'
-import Category from './Category';
+import Category from './Category'
 import FeatureLocation from './FeatureLocation'
 import Featureslisting from './Featureslisting'
 import Newsletter from './Newsletter'
