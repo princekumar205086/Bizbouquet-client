@@ -6,7 +6,6 @@ export default function Dashboard() {
     let logo = document.querySelector('.college-logo');
     //active link hook
     const [activeLink, setactiveLink] = useState('')
-
     const setActive = () =>{
         setactiveLink('hovered')
     }
