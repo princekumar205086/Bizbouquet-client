@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css"
 import Featureslistcard from "./Featureslistcard"
 import data from "../Data"
 import Centerbutton from "./Centerbutton"
-
+//import { useParams } from "react-router-dom"
 export default function Featureslisting() {
   var settings = {
     dots: true,
@@ -53,7 +53,7 @@ export default function Featureslisting() {
           </strong>
         </h4>
       </div>
-      <div className="container p-2" style={{'backgroundImage': 'linear-gradient( 270deg, rgb(176 42 42 / 16%) 0%, rgb(176 42 42 / 56%) 18.45%, rgb(176 42 42 / 80%) 49.67%, rgb(176 42 42 / 56%) 82.52%, rgb(176 42 42 / 20%) 99.7%, rgb(189 40 40 / 0%) 99.71%, rgb(203 56 55 / 0%) 99.72%, rgb(203 56 55 / 16%) 99.73%)', 'backgroundAttachment':'fixed'}}>
+      <div className="container p-2" style={{'backgroundImage': 'linear-gradient( 270deg, red,green,blue,orange,orangered', 'backgroundAttachment':'fixed'}}>
         <div className="row slider responsive slick-initialized slick-slider slick-dotted">
           <Slider className="p-1" {...settings}>
             {data.map((carddata, index) => {

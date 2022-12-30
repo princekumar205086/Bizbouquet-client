@@ -71,7 +71,8 @@ const Contact = () => {
                 <div className="form-group mt-3">
                   <input type="submit" className="btn contact-form-btn" value="Submit" />
                 </div>
-              </form>            </div>
+              </form>            
+              </div>
             <div className="col-lg-4 text-white bg-blue text-center p-2 number-panel">
               <h3 className="mt-4" >Let's talk about what we can build together</h3>
               <p className="mt-3 p-4" >Whatever may be your requirement - be it a simple website design, a complex data driven web application development, an e-commerce website, a native or cross platform mobile app development, a logo and brand identity design, a video production or a full-fledged digital marketing campaign - we have a solution for you.</p>

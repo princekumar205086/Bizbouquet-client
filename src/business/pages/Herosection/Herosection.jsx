@@ -7,8 +7,8 @@ export default function Herosection() {
         <div className="card bg-transparent border-0 mt-5">
             <div className="card-bdoy my-5">
             <section className="mt-5">
-        <h2 className="text-blue bg-transparent">Biggest Business Directory in the World</h2>
-        <p className="text-white">
+        <h2 className="text-blue bg-success bg-opacity-50 mx-auto w-50">Biggest Business Directory in the World</h2>
+        <p className="text-white bg-secondary bg-opacity-75 mx-auto w-50">
           <q>
             It is a long established fact that a reader will be distracted by
             the readable content of a page.
