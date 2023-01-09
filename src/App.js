@@ -12,6 +12,8 @@ import Website from './business/pages/Webframe/Website'
 import View from './business/pages/Manage/View'
 import Profile from './business/pages/User/Profile'
 import NotFound from './business/pages/404 page/Notfound'
+import Search from './business/Search/Search'
+import Searchpage from './business/Search/Searchpage'
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         <Route path='/Manageprofile' element={<Manage/>}></Route>
         <Route path='/profile' element={<Profile/>}></Route>
         <Route path='/view/:id' element={<View/>}></Route>
+        <Route path='/search' element={<Search/>}></Route>
+        <Route path='/searchpage' element={<Searchpage/>}></Route>
 
       </Routes>
       <Footer/>

@@ -164,18 +164,18 @@ export default function Login() {
                     await axios.post(`${base_url}register`, data)
                     //resetForm()
                     setInputvalue('')
-                    toast.success("Data posted successfully!")
+                    toast.success("Registered successfully!")
                     otpForm()
 
                 } catch (error) {
-                    toast.error("Data not posted successfully!")
+                    toast.error("Not registered successfully!")
                     console.log(error)
                 }
             }
             registerUser()
         }
         else {
-            toast.error("Form validation is not okay")
+            toast.error("Please fill out this form!")
             isFullname()
             isEmail()
             isContact()
@@ -230,9 +230,12 @@ export default function Login() {
                 email: logemail,
                 password: logpassword
             }
-            await axios.post(`${base_url}login`, data)
-            navigate("/dashboard")
-            toast.success("Sign in successfully!")
+            const logsuccess = await axios.post(`${base_url}login`, data)
+            if(logsuccess===true){
+                navigate("/dashboard")
+                toast.success("Sign in successfully!")
+            }
+            toast.error("Something went wrong!")
         } catch (error) {
             toast.error("Something went wrong!")
             console.log(error)
